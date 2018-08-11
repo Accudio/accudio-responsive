@@ -1,0 +1,61 @@
+{
+  "name": "accudio-responsive",
+  "description": "A simple vue.js project displaying a website in various responsive devices.",
+  "version": "1.0.0",
+  "author": "Alistair Shepherd <alistair@accudio.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src/ && stylelint src/**/*.vue",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "@fortawesome/free-regular-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@fortawesome/vue-fontawesome": "^0.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "cssnano": "^4.0.5",
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "file-loader": "^1.1.4",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.5.3",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^5.3.0",
+    "sass-loader": "^6.0.6",
+    "stylelint": "^9.4.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-scss": "^3.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "vue": "^2.5.11",
+    "vue-loader": "^13.0.5",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
