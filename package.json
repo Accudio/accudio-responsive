@@ -11,6 +11,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "precommit": "npm run lint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
@@ -42,6 +47,7 @@
     "eslint-plugin-standard": "^3.1.0",
     "file-loader": "^1.1.4",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.0.0-rc.13",
     "node-sass": "^4.5.3",
     "postcss": "^7.0.2",
     "postcss-loader": "^3.0.0",
